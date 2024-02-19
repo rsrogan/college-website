@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raak Arts and Science College</title>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+
+    <link rel="stylesheet" media="screen and (min-width: 960px)" href="largedevice.css">
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="smalldevice.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,800;0,900;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <!--font-awesome-->
+    <script src="https://kit.fontawesome.com/9282ec8a78.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- JavaScript Bundle with Popper -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .chart-container {
+            width: 50%;
+            height: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!----navbar start-->
+    <nav class="navbar navbar-expand-xl bg-light mb-1 ">
+        <div class="container-fluid ">
+            <a class="navbar-brand mx-4" href="#">Dashboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item  mx-3">
+                        <a class="nav-link " href="#about">About</a>
+                    </li>
+                    <li class="nav-item  mx-3">
+                        <a class="nav-link " href="#about">Password</a>
+                    </li>
+
+                    <li class="nav-item  dropdown mx-3 text-white">
+                        <a class="nav-link dropdown-toggle" href="gallery.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Gallery
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item mx-3 " aria-current="true" href="gallery.html">Photos</a></li>
+                            <li><a class="dropdown-item mx-3 " aria-current="true" href="gallery.html#video">Videos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item  dropdown mx-3 text-white">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Course
+                        </a>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item mx-3 " href="ug.html">Under Graduate</a></li>
+                            <li><a class="dropdown-item mx-3 " href="pg.html">Post Graduate</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item  dropdown mx-3 text-white">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Faculty
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item mx-3 " href="ug.html">UG Faculties</a></li>
+                            <li><a class="dropdown-item mx-3 " href="pg.html">PG Faculties</a></li>
+                        </ul>
+                    </li>
+
+
+
+
+
+                    <li><a href="login.html" class="btn btn-outline-dark mx-3">Log Out</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---navbar End-->
+
+    <!-- card- content -->
+    <div class="main">
+        <div class="container card-group text-center">
+
+            <div style=" max-width: 18rem;" class="m-5">
+                <div class="card ">
+                    <div class="card-body bg-primary">
+                        <h4 class="text-center text-white m-5"> Admission </h4>
+                        <h5 class="text-center text-white"> 0</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div style=" max-width: 18rem;" class="m-5">
+                <div class="card ">
+                    <div class="card-body bg-success">
+                        <h4 class="text-center text-white m-5"> Visits </h4>
+                        <h5 class="text-center text-white"> 0</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div style=" max-width: 18rem;" class="m-5">
+                <div class="card ">
+                    <div class="card-body bg-secondary">
+                        <h4 class="text-center text-white m-5"> Courses </h4>
+                        <h5 class="text-center text-white"> 0</h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- card-content end -->
+    <!-- chart -->
+
+    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+
+    <!-- chart end -->
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    
+    <!-- java script end here -->
+
+
+</body>
+
+</html>
